@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Actor&family=Fira+Sans:wght@700&family=Oleo+Script&display=swap"
       rel="stylesheet"
     />
-    <!--Vore meta description og keywords, som vi bruger ifb. med SEO-->    
+    <!--Vore meta description og keywords, som vi bruger ifb. med SEO-->
     <meta
       name="description"
       content="Har du spørgsmål eller ønsker du at finde ud af Skæg’s Kaffes åbningstider og lokation, så kan du finde det her."
@@ -34,7 +34,7 @@
       content="skægs kaffe, kaffe, kvalitets kaffe, kaffevogn, skægs kaffe lokation, skægs kaffe placering, kaffe i køge, skægs kaffe kontakt, arrangementer, skægs kaffe åbningstider, skægs kaffe adresse, køge nord"
     />
     <!--Noindex og nofollow meta tag-->
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
   </head>
   <body>
     <!--Min header og navigationsbar-->
@@ -69,14 +69,17 @@
     <h1>Kontakt & Info</h1>
     <p>
       Her på siden vil du kunne finde
-      <a class="kontaktlink" href="">kontaktoplysninger</a>,
-      <a class="kontaktlink" href="">åbningstider</a> og
-      <a class="kontaktlink" href="">lokation.</a>
+      <a class="kontaktlink" href="#kontaktoplysninger">kontaktoplysninger</a>,
+      <a class="kontaktlink" href="#åbningstider">åbningstider</a> og
+      <a class="kontaktlink" href="#lokation">lokation.</a>
     </p>
     <p class="kontaktp">
-      Har du nogle spørgsmål kan du udfylde kontaktformularen nedenunder.
+      Har du nogle spørgsmål kan du udfylde kontaktformularen
+      <a class="kontaktlink" href="#kontaktformular">nedenunder</a>.
       Alternativt ses alle kontakt oplysninger her:
     </p>
+
+    <h3 class="kontakth3" id="kontaktoplysninger">Kontaktoplysninger</h3>
     <p>Østerskovvej 34<br />4682 Tureby</p>
     <p>Tlf: 28917581</p>
     <a class="kontaktlinksingle" href="mailto:info@skaegskaffe.dk"
@@ -84,22 +87,37 @@
     >
     <p>CVR-nr: 39710315</p>
 
+    <h3 class="kontakth3">Sociale medier</h3>
+    <a class="someikoner" href="https://www.facebook.com/skaegskaffe"
+      ><i class="fa-brands fa-facebook-f"></i
+    ></a>
+    <a class="somelinks" href="https://www.facebook.com/skaegskaffe"
+      >@skaegskaffe</a
+    >
+    <a class="someikoner" href="https://www.instagram.com/skaegskaffe/"
+      ><i class="fa-brands fa-instagram"></i
+    ></a>
+    <a class="somelinks" href="https://www.instagram.com/skaegskaffe/">
+      @skaegskaffe
+    </a>
+
     <!--Vores scroll button-->
     <a href="#scroll" class="btn-scroll"> <i class="fa fa-angle-up"></i></a>
 
     <!--Kontaktformular lavet i Google Analyse-->
     <iframe
       class="kontaktform"
+      id="kontaktformular"
       src="https://docs.google.com/forms/d/e/1FAIpQLSd9DhqVo-ocr4UVSY2ttELeaE3WdIFwSLjjpj13Z4pK_ru71w/viewform?embedded=true"
     ></iframe>
 
     <section class="infosection">
       <!--Åbningstider section-->
       <div class="kontaktgrid">
-        <h2>Åbningstider</h2>
+        <h2 id="åbningstider">Åbningstider</h2>
         <h3>
           OBS! Åbningstider kan variere grundet arrangementer. Tjek derfor
-          <a class="kontaktlink" href="index.html">nyheder</a>,
+          <a class="kontaktlink" href="index.html#nyheder">nyheder</a>,
           <a class="kontaktlink" href="https://www.facebook.com/skaegskaffe"
             >Facebook</a
           >
@@ -121,7 +139,7 @@
 
       <!--Lokation section og Google Maps Embded kode-->
       <div class="mapsgrid">
-        <h2>Hvor er jeg i åbningstiden?</h2>
+        <h2 id="lokation">Hvor er jeg i åbningstiden?</h2>
         <p>Her kan du se hvilken adresse Skæg's Kaffe er på i åbningstiden.</p>
         <iframe
           class="maps"

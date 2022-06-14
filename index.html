@@ -1,235 +1,350 @@
 <!DOCTYPE html>
 <html lang="da">
+  <head>
+    <!--lang="da" og charset="utf-8" omhandler sprog på hjemmesiden og tillader æ, ø og å-->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Skæg's Kaffe | Forside</title>
+    <!--Linjen nedenunder er link og tilknytning videre til CSS dokument med styling-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Her er et link til animate.style-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Link til fontawesome ikoner-->
+    <script
+      src="https://kit.fontawesome.com/e414acdc27.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Link til vores skrifttyper på Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Actor&family=Fira+Sans:wght@700&family=Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Vore meta description og keywords, som vi bruger ifb. med SEO-->
+    <meta
+      name="description"
+      content="Skæg’s Kaffe er en lille mobil kaffevogn der tilbyder økologisk kvalitetskaffe, uanset om du er på farten, eller om du skal bruge servering til arrangementer."
+    />
+    <meta
+      name="keywords"
+      content="skægs kaffe, kaffe, varme drikke, kaffevogn, kvalitetskaffe, kaffe i køge, to-go, arrangementer, laktosefri, køge nord, hyggelig, økologisk"
+    />
+    <!--Noindex og nofollow meta tag-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  </head>
 
-<head>
-  <!--lang="da" og charset="utf-8" omhandler sprog på hjemmesiden og tillader æ, ø og å-->
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Skæg's Kaffe | Forside</title>
-  <!--Linjen nedenunder er link og tilknytning videre til CSS dokument med styling-->
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <!--Her er et link til animate.style-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!--Link til fontawesome ikoner-->
-  <script src="https://kit.fontawesome.com/e414acdc27.js" crossorigin="anonymous"></script>
-  <!--Link til vores skrifttyper på Google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Fira+Sans:wght@700&family=Oleo+Script&display=swap"
-    rel="stylesheet" />
-  <!--Vore meta description og keywords, som vi bruger ifb. med SEO-->
-  <meta name="description"
-    content="Skæg’s Kaffe er en lille mobil kaffevogn der tilbyder økologisk kvalitetskaffe, uanset om du er på farten, eller om du skal bruge servering til arrangementer." />
-  <meta name="keywords"
-    content="skægs kaffe, kaffe, varme drikke, kaffevogn, kvalitetskaffe, kaffe i køge, to-go, arrangementer, laktosefri, køge nord, hyggelig, økologisk" />
-  <!--Noindex og nofollow meta tag-->
-  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-</head>
+  <body>
+    <!--Min header og navigationsbar-->
+    <header id="scroll" class="header-forside">
+      <nav class="navigation">
+        <a href="index.html"
+          ><img class="logo" src="logobrun.svg" alt="logo"
+        /></a>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-ul" id="nav-ul">
+          <li>
+            <a class="active" href="index.html">Forside</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="arrangementer.html">Arrangementer</a>
+          </li>
+          <li>
+            <a href="omos.html">Om Skæg's Kaffe</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt & info</a>
+          </li>
+        </ul>
+      </nav>
 
-<body>
-  <!--Min header og navigationsbar-->
-  <header id="scroll" class="header-forside">
-    <nav class="navigation">
-      <a href="index.html"><img class="logo" src="logobrun.svg" alt="logo" /></a>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-ul" id="nav-ul">
-        <li>
-          <a class="active" href="index.html">Forside</a>
-        </li>
-        <li>
-          <a href="menu.html">Menu</a>
-        </li>
-        <li>
-          <a href="arrangementer.html">Arrangementer</a>
-        </li>
-        <li>
-          <a href="omos.html">Om Skæg's Kaffe</a>
-        </li>
-        <li>
-          <a href="kontakt.html">Kontakt & info</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="hero-tekst">
-      <h1>En skæg oplevelse med kaffe</h1>
-      <h3>
-        Hos Skæg's Kaffe serveres der altid kvalitetskaffe, også selvom at det
-        skal gå hurtigt
-      </h3>
-    </div>
-
-    <div class="hero-knap">
-      <a href="menu.html" class="hero-knappen">Se Menu</a>
-    </div>
-  </header>
-  <!--Vores scroll button-->
-  <a href="#scroll" class="btn-scroll"> <i class="fa fa-angle-up"></i></a>
-
-  <!--Sektion om Åbningstider og Nyheder-->
-  <section class="tid-nyhed">
-    <div class="kontaktgrid">
-      <h2>Åbningstider</h2>
-      <h3>
-        OBS! Åbningstider kan variere grundet arrangementer. Tjek derfor
-        <a class="kontaktlink" href="index.html#nyheder">nyheder</a>,
-        <a class="kontaktlink" href="https://www.facebook.com/skaegskaffe">Facebook</a>
-        eller
-        <a class="kontaktlink" href="https://www.instagram.com/skaegskaffe/">Instagram</a>
-        for ændring i åbningstider.
-      </h3>
-      <div class="openinggrid">
-        <p>Mandag<br />Tirsdag<br />Onsdag<br />Torsdag<br />Fredag</p>
-        <p>
-          6:30 - 10:30<br />6:30 - 10:30<br />6:30 - 10:30<br />
-          6:30 - 10:30<br />6:30 - 10:30
-        </p>
+      <div class="hero-tekst">
+        <h1>En skæg oplevelse med kaffe</h1>
+        <h3>
+          Hos Skæg's Kaffe serveres der altid kvalitetskaffe, også selvom at det
+          skal gå hurtigt
+        </h3>
       </div>
-      <img class="footerbeans" src="coffeebeans.svg" alt="Coffee Beans" />
+
+      <div class="hero-knap">
+        <a href="menu.html" class="hero-knappen">Se Menu</a>
+      </div>
+    </header>
+
+    <!--Vores scroll button og sticky SoMe knap-->
+    <a href="#scroll" class="btn-scroll"> <i class="fa fa-angle-up"></i></a>
+    <div class="sticky-some">
+      <a href="https://www.facebook.com/skaegskaffe"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a href="https://www.instagram.com/skaegskaffe/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
     </div>
 
-    <div class="nyheder">
-      <h2 id="nyheder">Nyheder</h2>
-      <div class="instagram-nyhed">
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-a8599e5a-3e30-48ac-bd26-c5d350b0b456"></div>
+    <!--Sektion om Åbningstider og Nyheder-->
+    <section class="tid-nyhed">
+      <div class="kontaktgrid">
+        <h2>Åbningstider</h2>
+        <h3>
+          OBS! Åbningstider kan variere grundet arrangementer. Tjek derfor
+          <a class="kontaktlink" href="index.html#nyheder">nyheder</a>,
+          <a class="kontaktlink" href="https://www.facebook.com/skaegskaffe"
+            >Facebook</a
+          >
+          eller
+          <a class="kontaktlink" href="https://www.instagram.com/skaegskaffe/"
+            >Instagram</a
+          >
+          for ændring i åbningstider.
+        </h3>
+        <div class="openinggrid">
+          <p>Mandag<br />Tirsdag<br />Onsdag<br />Torsdag<br />Fredag</p>
+          <p>
+            6:30 - 10:30<br />6:30 - 10:30<br />6:30 - 10:30<br />
+            6:30 - 10:30<br />6:30 - 10:30
+          </p>
+        </div>
+        <img class="footerbeans" src="coffeebeans.svg" alt="Coffee Beans" />
       </div>
-    </div>
-  </section>
+
+      <div class="nyheder">
+        <h2 id="nyheder">Nyheder</h2>
+        <div class="instagram-nyhed">
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <div class="elfsight-app-24b8c8b8-894a-4538-9fb8-725f0f70e03d"></div>
+        </div>
+      </div>
+    </section>
 
     <!--Sektion om Arrangement-->
 
-  <section class="forside-arrangement">
-    <h2 class="overskrift"> Mangler du én til at servere kaffe til dit arrangement?</h2>
-    <img src="img/arrangementforside2.png" class="produkter-arrangement-billede"
-      alt="Billede af Anders fra Skæg's Kaffe" />
-    <div class="tekstbox">
-      <h3>En kaffeoplevelse med et personligt touch og masser af skæghed</h3>
-      <p>
-        Skæg's Kaffe er mere end bare en god kaffe med på farten. Det handler
-        om samvær og en oplevelse, der kan efterlade et smil om munden. Med
-        Skæg's Kaffe til dit arrangement, kan du derfor få en personlig
-        oplevelse, der skræddersyer lige netop til dine behov og ønsker.
-      </p>
-    </div>
-    <div class="knap-illustration">
-      <div class="knap">
-        <a href="arrangementer.html" class="knappen">Læs Mere</a>
+    <section class="forside-arrangement">
+      <h2 class="overskrift">
+        Mangler du én til at servere kaffe til dit arrangement?
+      </h2>
+      <img
+        src="img/arrangementforside2.png"
+        class="produkter-arrangement-billede"
+        alt="Billede af Anders fra Skæg's Kaffe"
+      />
+      <div class="tekstbox">
+        <h3>En kaffeoplevelse med et personligt touch og masser af skæghed</h3>
+        <p>
+          Skæg's Kaffe er mere end bare en god kaffe med på farten. Det handler
+          om samvær og en oplevelse, der kan efterlade et smil om munden. Med
+          Skæg's Kaffe til dit arrangement, kan du derfor få en personlig
+          oplevelse, der skræddersyer lige netop til dine behov og ønsker.
+        </p>
       </div>
-      <img class="kontaktvogn" src="vogn.svg" alt="Kaffevogn" />
-    </div>
-  </section>
+      <div class="knap-illustration">
+        <div class="knap">
+          <a href="arrangementer.html" class="knappen">Læs Mere</a>
+        </div>
+        <img class="kontaktvogn" src="vogn.svg" alt="Kaffevogn" />
+      </div>
+    </section>
 
     <!--Sektion om Produkter-->
 
-  <section class="forside-produkter">
-    <h2 class="overskrift">Skræddersyet kaffe til dit behov</h2>
-    <img src="img/kaffe.png" class="produkter-arrangement-billede" alt="Billede af Kaffe" />
-    <div class="tekstbox">
-      <h3>En god kaffe med fokus på dit heldbred og ingen dårlig mave</h3>
-      <p>
-        Kaffe skal være tilgængelig for alle og enhver. Derfor sætter Skæg’s Kaffe fokus på alle, der døjer med
-        laktoseintolerance eller andre former for mælkeallergier. Du kan nemlig hos Skæg’s Kaffe få populære alternativer til
-        komælk, såsom havremælk, soyamælk og endda ærtemælk.
-      </p>
-    </div>
-    <div class="knap-illustration">
-      <div class="knap">
-        <a href="omos.html" class="knappen">læs mere</a>
+    <section class="forside-produkter">
+      <h2 class="overskrift">Skræddersyet kaffe til dit behov</h2>
+      <img
+        src="img/kaffe.png"
+        class="produkter-arrangement-billede"
+        alt="Billede af Kaffe"
+      />
+      <div class="tekstbox">
+        <h3>En god kaffe med fokus på dit heldbred og ingen dårlig mave</h3>
+        <p>
+          Kaffe skal være tilgængelig for alle og enhver. Derfor sætter Skæg’s
+          Kaffe fokus på alle, der døjer med laktoseintolerance eller andre
+          former for mælkeallergier. Du kan nemlig hos Skæg’s Kaffe få populære
+          alternativer til komælk, såsom havremælk, soyamælk og endda ærtemælk.
+        </p>
       </div>
-      <img class="kontaktvogn" src="img/takeawaykop.png" alt="Take Away Kop" />
-    </div>
-  </section>
+      <div class="knap-illustration">
+        <div class="knap">
+          <a href="omos.html" class="knappen">læs mere</a>
+        </div>
+        <img
+          class="kontaktvogn"
+          src="img/takeawaykop.png"
+          alt="Take Away Kop"
+        />
+      </div>
+    </section>
 
     <!--Sektion om Anmeldelser-->
 
-  <section class="anmeldelser">
-    <div class="anmeldelse-overskrift">
-      <h2>Se hvad tidligere gæster har sagt</h2>
-    </div>
-
-    <div class="box">
-      <div class="box-info">
-        <img src="img/anna.jpg" class="anmeldelse-billed" alt="Billede af Anna" />
-        <h3>Anna Friis</h3>
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <p>Mega god kaffe og service🤩</p>
+    <section class="anmeldelser">
+      <div class="anmeldelse-overskrift">
+        <h2>Se hvad tidligere gæster har sagt</h2>
       </div>
 
-      <div class="box-info">
-        <img src="img/anja.jpg" class="anmeldelse-billed" alt="Billede af Anja" />
-        <h3>Anja Brix Vergara</h3>
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <p>Uden tvivl en af de bedste kaffe i Køge 🤩🤩🤩</p>
-      </div>
+      <div class="box">
+        <div class="box-info">
+          <img
+            src="img/anna.jpg"
+            class="anmeldelse-billed"
+            alt="Billede af Anna"
+          />
+          <h3>Anna Friis</h3>
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <p>Mega god kaffe og service🤩</p>
+        </div>
 
-      <div class="box-info">
-        <img src="img/morten.jpg" class="anmeldelse-billed" alt="Billede af Morten" />
-        <h3>Morten Juul Rasmussen</h3>
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
-        <img src="img/stjerne.png" class="stjerner" alt="Anmeldelse stjerne" />
+        <div class="box-info">
+          <img
+            src="img/anja.jpg"
+            class="anmeldelse-billed"
+            alt="Billede af Anja"
+          />
+          <h3>Anja Brix Vergara</h3>
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <p>Uden tvivl en af de bedste kaffe i Køge 🤩🤩🤩</p>
+        </div>
+
+        <div class="box-info">
+          <img
+            src="img/morten.jpg"
+            class="anmeldelse-billed"
+            alt="Billede af Morten"
+          />
+          <h3>Morten Juul Rasmussen</h3>
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <img
+            src="img/stjerne.png"
+            class="stjerner"
+            alt="Anmeldelse stjerne"
+          />
+          <p>
+            Enormt lækker kaffe og høflig betjening. Har vel efterhånden prøvet
+            hele menukortet. Specielt er jeg vild med hans cortado 🤗
+          </p>
+        </div>
+      </div>
+      <div class="kaffebønner-illustration">
+        <img
+          src="img/kaffebønner.png"
+          class="bønner-illustration"
+          alt="Kaffebønner"
+        />
+      </div>
+    </section>
+
+    <!--Vores footer-->
+    <footer>
+      <img class="footerlogo" src="logobrun.svg" alt="logo" />
+      <section class="footerkontakt">
+        <h3>Kontakt</h3>
+        <p>Østerskovvej 34<br />4682 Tureby</p>
+        <p>Tlf: 28917581</p>
+        <a href="mailto:info@skaegskaffe.dk">Mail: info@skaegskaffe.dk</a>
+        <p>CVR-nr: 39710315</p>
+      </section>
+      <section class="footertider">
+        <h3>Åbningstider</h3>
         <p>
-          Enormt lækker kaffe og høflig betjening. Har vel efterhånden prøvet
-          hele menukortet. Specielt er jeg vild med hans cortado 🤗
+          OBS! Vær opmærksom på at ændring af åbningstider kan ske under ugens
+          forløb.
         </p>
-      </div>
-    </div>
-    <div class="kaffebønner-illustration">
-      <img src="img/kaffebønner.png" class="bønner-illustration" alt="Kaffebønner" />
-    </div>
-  </section>
-
-  <!--Vores footer-->
-  <footer>
-    <img class="footerlogo" src="logobrun.svg" alt="logo" />
-    <section class="footerkontakt">
-      <h3>Kontakt</h3>
-      <p>Østerskovvej 34<br />4682 Tureby</p>
-      <p>Tlf: 28917581</p>
-      <a href="mailto:info@skaegskaffe.dk">Mail: info@skaegskaffe.dk</a>
-      <p>CVR-nr: 39710315</p>
-    </section>
-    <section class="footertider">
-      <h3>Åbningstider</h3>
-      <p>
-        OBS! Vær opmærksom på at ændring af åbningstider kan ske under ugens
-        forløb.
-      </p>
-      <p>Man-Fre:<br />06.30-10.30</p>
-    </section>
-    <section class="footerfind">
-      <h3>Find det du søger...</h3>
-      <a href="kontakt.html">Praktiske informationer</a>
-      <a href="arrangementer.html">Arrangementer</a>
-      <a href="omos.html">Produkter</a>
-      <a href="menu.html">Menu</a>
-    </section>
-    <section class="footersome">
-      <h3>Følg mig</h3>
-      <a href="https://www.facebook.com/skaegskaffe">
-        <i class="fa-brands fa-facebook-f"></i>@skaegskaffe
-      </a>
-      <a href="https://www.instagram.com/skaegskaffe/">
-        <i class="fa-brands fa-instagram"></i>@skaegskaffe
-      </a>
-    </section>
-    <img class="footerbeans" src="coffeebeans.svg" alt="coffeebeans" />
-  </footer>
-  <!--linket til javascript-->
-  <script src="script.js"></script>
-</body>
-
+        <p>Man-Fre:<br />06.30-10.30</p>
+      </section>
+      <section class="footerfind">
+        <h3>Find det du søger...</h3>
+        <a href="kontakt.html">Praktiske informationer</a>
+        <a href="arrangementer.html">Arrangementer</a>
+        <a href="omos.html">Produkter</a>
+        <a href="menu.html">Menu</a>
+      </section>
+      <section class="footersome">
+        <h3>Følg mig</h3>
+        <a href="https://www.facebook.com/skaegskaffe">
+          <i class="fa-brands fa-facebook-f"></i>@skaegskaffe
+        </a>
+        <a href="https://www.instagram.com/skaegskaffe/">
+          <i class="fa-brands fa-instagram"></i>@skaegskaffe
+        </a>
+      </section>
+      <img class="footerbeans" src="coffeebeans.svg" alt="coffeebeans" />
+    </footer>
+    <!--linket til javascript-->
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -118,7 +118,7 @@ p{
     display: block;
 }
 
-/*Styling af scroll-knap*/
+/*Styling af scroll-knap og sticky some ikoner*/
 .btn-scroll{
     background-color: var(--primary-color);
     color: var(--quarternary-color);
@@ -130,6 +130,28 @@ p{
     top: 70%;
     margin-left: 85%;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.418);
+    z-index: 2;
+}
+
+.sticky-some{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px 0px;
+    position: sticky;
+    top: 77%;
+    margin-left: 85%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.418);
+    width: 37px;
+    z-index: 2;
+}
+
+.sticky-some a{
+    color: var(--quarternary-color);
+    font-size: 22px;
+    padding: 8px 0px;
+    display: block;
+    text-align: center;
 }
 
 /*Styling af footer*/
@@ -570,8 +592,12 @@ footer i{
 }
 
 @media screen and (min-width: 420px) {
-    /*Styling af scroll-knap*/
+    /*Styling af scroll-knap og sticky some knap*/
     .btn-scroll{
+        margin-left: 90%;
+    }
+
+    .sticky-some{
         margin-left: 90%;
     }
 
@@ -782,8 +808,12 @@ footer i{
         margin-top: 0px;
     }
 
-    /*Styling af scroll-knap*/
+    /*Styling af scroll-knap og sticky some knap*/
     .btn-scroll{
+        margin-left: 94%;
+    }
+
+    .sticky-some{
         margin-left: 94%;
     }
 
@@ -996,13 +1026,11 @@ footer i{
         font-size: 18px;
     }
 
-
     .bønner-illustration{
         width: 30%;
     }
 
-/*Styling af om os siden*/
-
+    /*Styling af om os siden*/
     .om-skaeg{
         width: auto;
         margin: auto;
@@ -1072,14 +1100,11 @@ footer i{
         justify-content: center;
     }
 
-
     .om-produkter p{
         margin-top: 3rem;
         padding-right: 11rem;
         padding-left: 11rem;
     }
-
-
 
     .kaffe-historie{
         display: grid;
@@ -1098,14 +1123,12 @@ footer i{
         text-align: left;
         padding-right: 2rem;
         padding-left: 2rem;
-
     }
 
     .historie-textbox p{
         text-align: initial;
         padding-right: 2rem;
         padding-left: 2rem;
-
     }
 
     .goats-billede{
@@ -1116,20 +1139,14 @@ footer i{
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: span 2;
-        
     }
-
 
     .coffeebean{ 
         width: 20%;
         margin: 0;
         display: block;
         margin-left: auto;
-        
     }
-
-    
-
 }
 
 @media screen and (min-width: 800px) {
@@ -1168,7 +1185,6 @@ footer i{
         width: 20%;
         justify-content: right;
     }
-
 }
 
 @media screen and (min-width: 900px) {
@@ -1202,8 +1218,6 @@ footer i{
     .overskrift{
         padding-top: 5rem;
     }
-
-
 }
   
 @media screen and (min-width: 1000px) {
@@ -1235,7 +1249,6 @@ footer i{
     }
 
     /*Styling af forside*/
-
     .hero-tekst{
         padding-top: 4rem;
     }
@@ -1270,7 +1283,6 @@ footer i{
 
 
     /*Styling af om os siden*/
-
     .om-textbox{
         width: auto;
         margin: auto;
@@ -1281,8 +1293,7 @@ footer i{
 
     .skaegivogn{
         width: 70%;
-    }
-   
+    } 
 }
   
 
@@ -1329,9 +1340,7 @@ footer i{
         padding: 0;
     }
 
-
     /*Styling af om os siden*/
-
     .skaeg-historie{
         width: auto;
         margin: auto;
@@ -1341,8 +1350,6 @@ footer i{
         width: 100%
         
     }
-    
-
 }
 
 
@@ -1360,5 +1367,4 @@ footer i{
         width: 40%;
    
     }
-
 }

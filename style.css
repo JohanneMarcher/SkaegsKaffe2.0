@@ -405,7 +405,7 @@ footer i{
 
 .hero-scroll{
     width: 50px;
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 
 .tid-nyhed{
@@ -623,6 +623,11 @@ footer i{
     .hero-tekst{
         padding: 4rem 1rem 0rem 1rem;
     }
+
+    .hero-scroll{
+        padding-top: 5rem;
+    }
+
     .bønner-illustration{
         width: 50%;
     }

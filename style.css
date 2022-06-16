@@ -3,6 +3,7 @@
     --secondary-color: #F9F5F0;
     --tertiary-color: #AB875F;
     --quarternary-color: #422918;
+    --quinary-color: #C66844;
     --font-set: 'Oleo Script', cursive;
     --second-font-set: 'Fira Sans', sans-serif;
     --third-font-set: 'Actor', sans-serif;
@@ -22,14 +23,14 @@ html{
 h1{
     font-size: 38px;
     font-family: var(--font-set);
-    color: var(--quarternary-color);
+    color: var(--quinary-color);
     text-align: center;
 }
 
 h2{
     font-size: 35px;
     font-family: var(--font-set);
-    color: var(--quarternary-color);
+    color: var(--quinary-color);
     text-align: center; 
     margin: 10px;  
     margin-top: 40px;
@@ -231,12 +232,39 @@ footer i{
     margin-top: -30px;
 }
 
+.produkter-knappen{
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 120px;
+    text-decoration: none;
+    color: var(--quarternary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid #422918;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-family: var(--third-font-set);
+    text-transform: uppercase;
+}
+
+.produkter-knappen:hover{
+    background: var(--primary-color);
+    transition: 0.3s;
+}
+
 /*Styling af kontakt og info siden*/
 .kontaktform{
     width: 100%; 
     height: 1100px;
     border: 0;
     margin-top: 30px;
+}
+
+.obsh3{
+    font-size: 18px;
+    margin-top: -20px;
 }
 
 .kontaktp{
@@ -275,26 +303,6 @@ footer i{
     margin: 0px auto;
 }
 
-.somelinks{
-    font-size: 18px;
-    font-family: var(--third-font-set);
-    color: var(--quarternary-color);
-    display: block;
-    text-align: center;
-    padding: 0px 20px;
-    margin: 0;  
-}
-
-.someikoner{
-    font-size: 45px;
-    font-family: var(--third-font-set);
-    color: var(--quarternary-color);
-    display: block;
-    text-align: center;
-    padding: 0px 20px;
-    margin: 0; 
-}
-
 .kontakth3{
     margin-bottom: 0px;
     margin-top: 30px;
@@ -310,7 +318,6 @@ footer i{
 .arrangementbillede{ 
     width: 100%;
     margin-top: 20px;
-
 }
 
 .pakke1 {
@@ -347,8 +354,8 @@ footer i{
     height: 1500px;
     border: 0;
     margin-top: 30px;
-
 }
+
 .arrangementkalender {
     width: 80%;
     height: 300px;
@@ -369,6 +376,10 @@ footer i{
     background-image: linear-gradient(rgba(66, 41, 28, 0.669),rgba(66, 41, 28, 0.683)),url(img/hero-img.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.overskrift{
+    color: var(--quarternary-color);
 }
 
 .hero-tekst{
@@ -502,11 +513,7 @@ footer i{
     width: 60%;
 }
 
-
-
 /*Styling af om os siden*/
-
-
 .skaegivogn{ 
     display: flex;
     justify-content: center;
@@ -515,7 +522,14 @@ footer i{
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+}
 
+.textbox h2{
+    color: var(--quarternary-color);
+}
+
+.historie-textbox h2{
+    color: var(--quarternary-color);
 }
 
 .skaeg-historie{
@@ -529,7 +543,6 @@ footer i{
     width: 100%;
     margin-top: 20px;
 }
-
 
 .vogn-illustration{
     display: flex;
@@ -546,7 +559,6 @@ footer i{
     padding-top: 3rem;
 }
 
-
 .ikon-logo{
     display: inline-flex;
     justify-content: center;
@@ -557,7 +569,6 @@ footer i{
     width: 20%;
     margin: 3px;
 }
-
 
 .kaffekop-illustration{
     display: flex;
@@ -589,10 +600,7 @@ footer i{
     margin-right: auto;
     width: 30%;
     padding-bottom: 10px;
-    
 }
-
-
 
 @media screen and (min-width: 340px) {
 /*Styling af kontakt og info siden*/

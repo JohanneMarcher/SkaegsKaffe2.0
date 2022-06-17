@@ -314,7 +314,6 @@ footer i{
 }
 
 /*Styling af arrangement siden*/
-
 .arrangementbillede{ 
     width: 100%;
     margin-top: 20px;
@@ -385,6 +384,18 @@ footer i{
 .hero-tekst{
     text-align: center;
     padding-top: 35px;
+}
+
+.forside-kop{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 15px; 
+}
+
+.forside-arrangement .kontaktvogn{
+    padding-top: 15px; 
 }
 
 .hero-tekst h1{
@@ -472,14 +483,6 @@ footer i{
 .knappen:hover{
     background: var(--primary-color);
     transition: 0.3s;
-}
-
-.forside-arrangement .kontaktvogn{
-    padding-top: 2rem;
-}
-
-.forside-produkter .kontaktvogn{
-    padding-top: 2rem;
 }
 
 .anmeldelser{
@@ -914,6 +917,14 @@ footer i{
         padding: 0rem 3rem 0rem 3rem;
     }
 
+    .forside-kop{
+        padding: 0px;
+    }
+    
+    .forside-arrangement .kontaktvogn{
+        padding-top: 0px; 
+    }
+
     .forside-arrangement h2{
         text-align: left;
         padding: 0px 50px;
@@ -968,10 +979,6 @@ footer i{
         padding-top: 35rem;
     }
 
-    .forside-arrangement .kontaktvogn{
-        padding: 0px;
-    }
-
     .knap{
         padding: 30px 0px 0px 50px;
     }
@@ -1019,10 +1026,6 @@ footer i{
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 1; 
-    }
-
-    .forside-produkter .kontaktvogn{
-        padding: 0;
     }
 
     .forside-produkter .knap-illustration{
@@ -1406,12 +1409,6 @@ footer i{
         padding: 20px 0px 0px 80px;
     }
 
-
-
-
-
-
-
     /*Styling af om os siden*/
     .skaeg-historie{
         width: auto;
@@ -1419,8 +1416,7 @@ footer i{
     }
     
     .skaeg-historie .anders{
-        width: 100%
-        
+        width: 100%   
     }
 }
 
@@ -1435,8 +1431,8 @@ footer i{
     .pakkegrid {
         padding: 0px 200px; 
     } 
+
     .arrangementkalender {
         width: 40%;
-   
     }
 }

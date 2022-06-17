@@ -504,13 +504,11 @@ footer i{
     padding: 1.5rem 1.5rem 
 }
 
-.kaffebønner-illustration{
-    display: flex;
-    justify-content: center;
-}
-
 .bønner-illustration{
     width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Styling af om os siden*/
@@ -954,27 +952,32 @@ footer i{
     .tekstbox{
         grid-column-start: 2;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;  
+        grid-row-start: 1;
+        grid-row-end: 1;  
+        padding-top: 15rem;
     }
 
     .produkter-arrangement-billede{
-        width: 100%;
-        height: 100%;
+        width:  100%;
+        height: 100vh;
         background-size: cover;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
-        grid-row-end: 4; 
+        grid-row-end: 1; 
     }
 
-    .knap-illustration{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .forside-arrangement .knap-illustration{
+        display: inline-flex;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1; 
+        padding-top: 35rem;
     }
 
     .forside-arrangement .kontaktvogn{
-        padding: 0;
+        padding: 0px;
     }
 
     .knap{
@@ -1012,22 +1015,32 @@ footer i{
     .forside-produkter .tekstbox{
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 2;
-        grid-row-end: 2;  
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-top: 13rem;
     }
 
     .forside-produkter .produkter-arrangement-billede{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-size: cover;
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 4; 
+        grid-row-end: 1; 
     }
 
     .forside-produkter .kontaktvogn{
         padding: 0;
+    }
+
+    .forside-produkter .knap-illustration{
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1; 
+        padding-top: 35rem;
     }
 
     .anmeldelse-billed{
@@ -1211,6 +1224,14 @@ footer i{
         width: 20%;
         justify-content: right;
     }
+
+    .forside-produkter .tekstbox{
+        padding-top: 10rem;
+    }
+
+    .forside-arrangement .tekstbox{
+        padding-top: 14rem;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -1243,6 +1264,15 @@ footer i{
 
     .overskrift{
         padding-top: 5rem;
+    }
+
+    /*Styling af forside*/
+    .forside-produkter .knap-illustration{
+        padding-top: 26rem;
+    }
+
+    .forside-arrangement .knap-illustration{
+        padding-top: 32em;
     }
 }
   
@@ -1307,6 +1337,9 @@ footer i{
         padding: 0rem 2rem 0rem 2rem;
     }
 
+    .forside-arrangement .knap-illustration{
+        padding-top: 30rem;
+    }
 
     /*Styling af om os siden*/
     .om-textbox{
@@ -1363,8 +1396,20 @@ footer i{
     }
 
     .knap{
-        padding: 0;
+        padding: 10px 0px 0px 80px;
     }
+
+    .forside-arrangement .tekstbox{
+        padding-top: 10rem;
+    }
+
+    .forside-arrangement .knap-illustration{
+        padding-top: 25rem;
+    }
+
+
+
+
 
     /*Styling af om os siden*/
     .skaeg-historie{

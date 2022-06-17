@@ -542,14 +542,13 @@ footer i{
     margin-top: 20px;
 }
 
-.vogn-illustration{
-    display: flex;
-    justify-content: center; 
-}
 
 .kaffevogn-ai{
     width: 30%;
     padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .om-produkter{
@@ -568,14 +567,12 @@ footer i{
     margin: 3px;
 }
 
-.kaffekop-illustration{
-    display: flex;
-    justify-content: center;  
-}
-
 .kaffe-illustration{
     width: 20%;
     padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .kaffe-historie{
@@ -586,10 +583,6 @@ footer i{
 .goats-billede{
     width: 100%;
     
-}
-
-.bean-illustration{
-    justify-content: center;  
 }
 
 .coffeebean{

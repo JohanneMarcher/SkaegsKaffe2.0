@@ -369,12 +369,12 @@ footer i{
 }
 
 /*Styling til forside*/
-.header-forside{
-    min-height: 100vh;
+.herovideo{
     width: 100%;
-    background-image: linear-gradient(rgba(66, 41, 28, 0.669),rgba(66, 41, 28, 0.683)),url(img/hero-img.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 550px;
+    position: absolute;
+    z-index: -3;
+    object-fit: cover;
 }
 
 .overskrift{
@@ -384,6 +384,7 @@ footer i{
 .hero-tekst{
     text-align: center;
     padding-top: 35px;
+    margin-bottom: 60px;
 }
 
 .forside-kop{
@@ -622,6 +623,10 @@ footer i{
     }
 
     /*Styling af forside*/
+    .herovideo{
+        height: 500px;
+    }
+    
     .hero-tekst{
         padding: 4rem 1rem 0rem 1rem;
     }
@@ -1226,6 +1231,10 @@ footer i{
     .forside-arrangement .tekstbox{
         padding-top: 14rem;
     }
+
+    .hero-tekst{
+        margin-bottom: 80px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -1248,10 +1257,6 @@ footer i{
         padding: 0px 60px;
     }
 
-    .header-forside{
-        background-image: linear-gradient(rgba(66, 41, 28, 0.623),rgba(66, 41, 28, 0.655)),url(img/hero-img2.jpg);
-    }
-
     .hero-tekst{
         padding-top: 5rem;
     }
@@ -1267,6 +1272,10 @@ footer i{
 
     .forside-arrangement .knap-illustration{
         padding-top: 32em;
+    }
+
+    .hero-tekst{
+        margin-bottom: 25px;
     }
 }
   
@@ -1301,6 +1310,7 @@ footer i{
     /*Styling af forside*/
     .hero-tekst{
         padding-top: 4rem;
+        margin-bottom: 60px;
     }
 
     .tid-nyhed{
